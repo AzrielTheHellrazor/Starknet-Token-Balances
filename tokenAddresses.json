@@ -1,7 +1,599 @@
 {
-  "tokens": {
-    "ETH": "0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7",
-    "USDC": "0x053c91253bc9682c04929ca02ed00b3e423f6710d2ee7e0d5ebb06f3ecf368a8",
-    "USDT": "0x068f5c6a61780768455de69077e07e89787839bf8166decfbf92b645209c0fb8"
-  }
+  "coins": [
+    {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "decimal": "18",
+      "contract": "0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7",
+      "image": "https://raw.githubusercontent.com/Fibrous-Finance/Fibrous-tokens/refs/heads/main/images/starknet/0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7.png"
+    },
+    {
+      "name": "zkLend: zETH",
+      "symbol": "zETH",
+      "decimal": "18",
+      "contract": "0x01b5bd713e72fdc5d63ffd83762f81297f6175a5e0a4771cdadbc1dd5fe72cb1",
+      "image": ""
+    },
+    {
+      "name": "USDC",
+      "symbol": "USDC",
+      "decimal": "6",
+      "contract": "0x053c91253bc9682c04929ca02ed00b3e423f6710d2ee7e0d5ebb06f3ecf368a8",
+      "image": "https://coin-images.coingecko.com/coins/images/6319/small/usdc.png?1696506694"
+    },
+    {
+      "name": "STRK",
+      "symbol": "STRK",
+      "decimal": "18",
+      "contract": "0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d",
+      "image": "https://assets.coingecko.com/coins/images/26433/small/starknet.png"
+    },
+    {
+      "name": "USDT",
+      "symbol": "USDT",
+      "decimal": "6",
+      "contract": "0x068f5c6a61780768455de69077e07e89787839bf8166decfbf92b645209c0fb8",
+      "image": "https://coin-images.coingecko.com/coins/images/325/small/Tether.png?1696501661"
+    },
+    {
+      "name": "DAI",
+      "symbol": "DAI",
+      "decimal": "18",
+      "contract": "0x00da114221cb83fa859dbdb4c44beeaa0bb37c7537ad5ae66fe5e0efd20e6eb3",
+      "image": "https://coin-images.coingecko.com/coins/images/9956/small/Badge_Dai.png?1696509996"
+    },
+    {
+      "name": "zkLend: zUSDC",
+      "symbol": "zUSDC",
+      "decimal": "6",
+      "contract": "0x047ad51726d891f972e74e4ad858a261b43869f7126ce7436ee0b2529a98f486",
+      "image": ""
+    },
+    {
+      "name": "GoL2: TGOL",
+      "symbol": "GOL",
+      "decimal": "0",
+      "contract": "0x06a05844a03bb9e744479e3298f54705a35966ab04140d3d8dd797c1f6dc49d0",
+      "image": ""
+    },
+    {
+      "name": "10KSwap: ETH-USDC Pool",
+      "symbol": "LPT",
+      "decimal": "18",
+      "contract": "0x000023c72abdf49dffc85ae3ede714f2168ad384cc67d08524732acea90df325",
+      "image": ""
+    },
+    {
+      "name": "JediSwap: ETH/USDC Pool",
+      "symbol": "JEDI-P",
+      "decimal": "18",
+      "contract": "0x04d0390b777b424e43839cd1e744799f3de6c176c7e32c1812a41dbd9c19db6a",
+      "image": ""
+    },
+    {
+      "name": "mySwap: ETH/USDC Pool",
+      "symbol": "MYLP",
+      "decimal": "12",
+      "contract": "0x022b05f9396d2c48183f6deaf138a57522bcc8b35b67dee919f76403d1783136",
+      "image": ""
+    },
+    {
+      "name": "zkLend: zUSDT",
+      "symbol": "zUSDT",
+      "decimal": "6",
+      "contract": "0x00811d8da5dc8a2206ea7fd0b28627c2d77280a515126e62baa4d78e22714c4a",
+      "image": ""
+    },
+    {
+      "name": "Stark Rocket",
+      "symbol": "STRKR",
+      "decimal": "18",
+      "contract": "0x0030c42f4c0a094ea1eda7e3086056a225a464c43dd7da48bd2083fc3114a4db",
+      "image": ""
+    },
+    {
+      "name": "Nostra: Interest Bearing and Collateralized ETH Token",
+      "symbol": "iETH-c",
+      "decimal": "18",
+      "contract": "0x057146f6409deb4c9fa12866915dd952aa07c1eb2752e451d7f3b042086bdeb8",
+      "image": ""
+    },
+    {
+      "name": "wBTC",
+      "symbol": "wBTC",
+      "decimal": "8",
+      "contract": "0x03fe2b97c1fd336e750087d68b9b867997fd64a2661ff3ca5a7c771641e8e7ac",
+      "image": "https://coin-images.coingecko.com/coins/images/1/small/bitcoin.png?1696501400"
+    },
+    {
+      "name": "Realms: LORDS",
+      "symbol": "LORDS",
+      "decimal": "18",
+      "contract": "0x0124aeb495b947201f5fac96fd1138e326ad86195b98df6dec9009158a533b49",
+      "image": "https://assets.coingecko.com/coins/images/22171/small/Frame_1.png"
+    },
+    {
+      "name": "zkLend: zDAI",
+      "symbol": "zDAI",
+      "decimal": "18",
+      "contract": "0x062fa7afe1ca2992f8d8015385a279f49fad36299754fb1e9866f4f052289376",
+      "image": ""
+    },
+    {
+      "name": "KiToken",
+      "symbol": "KI",
+      "decimal": "18",
+      "contract": "0x0269b6a4501f60b6012dd659cdaec077cca07b073aa0f6ef5cf710ae804b68f7",
+      "image": ""
+    },
+    {
+      "name": "Starknet Voting Token",
+      "symbol": "vSTRK",
+      "decimal": "18",
+      "contract": "0x0782f0ddca11d9950bc3220e35ac82cf868778edb67a5e58b39838544bc4cd0f",
+      "image": "https://assets.coingecko.com/coins/images/26433/small/starknet.png"
+    },
+    {
+      "name": "zkLend: zSTRK Token",
+      "symbol": "zSTRK",
+      "decimal": "18",
+      "contract": "0x06d8fa671ef84f791b7f601fa79fea8f6ceb70b5fa84189e3159d532162efc21",
+      "image": ""
+    },
+    {
+      "name": "Legacy wstETH",
+      "symbol": "wstETH",
+      "decimal": "18",
+      "contract": "0x042b8f0484674ca266ac5d08e4ac6a3fe65bd3129795def2dca5c34ecc5f96d2",
+      "image": "https://starkscan.co/token/0x042b8f0484674ca266ac5d08e4ac6a3fe65bd3129795def2dca5c34ecc5f96d2"
+    },
+    {
+      "name": "Spirit Stone",
+      "symbol": "SPIST",
+      "decimal": "18",
+      "contract": "0x06182278e63816ff4080ed07d668f991df6773fd13db0ea10971096033411b11",
+      "image": ""
+    },
+    {
+      "name": "EKUBO",
+      "symbol": "EKUBO",
+      "decimal": "18",
+      "contract": "0x075afe6402ad5a5c20dd25e10ec3b3986acaa647b77e4ae24b0cbc9a54a27a87",
+      "image": "https://starkscan.co/token/0x075afe6402ad5a5c20dd25e10ec3b3986acaa647b77e4ae24b0cbc9a54a27a87"
+    },
+    {
+      "name": "Nostra: Alpha Interest Bearing and Collateralized USDC Token",
+      "symbol": "iUSDC-c",
+      "decimal": "6",
+      "contract": "0x029959a546dda754dc823a7b8aa65862c5825faeaaf7938741d8ca6bfdc69e4e",
+      "image": ""
+    },
+    {
+      "name": "NSTR",
+      "symbol": "NSTR",
+      "decimal": "18",
+      "contract": "0x00c530f2c0aa4c16a0806365b0898499fba372e5df7a7172dc6fe9ba777e8007",
+      "image": "https://starkscan.co/token/0x00c530f2c0aa4c16a0806365b0898499fba372e5df7a7172dc6fe9ba777e8007"
+    },
+    {
+      "name": "Nostra: Alpha Interest Bearing and Collateralized ETH Token",
+      "symbol": "iETH-c",
+      "decimal": "18",
+      "contract": "0x070f8a4fcd75190661ca09a7300b7c93fab93971b67ea712c664d7948a8a54c6",
+      "image": ""
+    },
+    {
+      "name": "JediSwap: ETH/USDT Pool",
+      "symbol": "JEDI-P",
+      "decimal": "18",
+      "contract": "0x045e7131d776dddc137e30bdd490b431c7144677e97bf9369f629ed8d3fb7dd6",
+      "image": ""
+    },
+    {
+      "name": "10KSwap: ETH-USDT Pool",
+      "symbol": "LPT",
+      "decimal": "18",
+      "contract": "0x05900cfa2b50d53b097cb305d54e249e31f24f881885aae5639b0cd6af4ed298",
+      "image": ""
+    },
+    {
+      "name": "mySwap: ETH/USDT Pool",
+      "symbol": "MYLP",
+      "decimal": "12",
+      "contract": "0x041f9a1e9a4d924273f5a5c0c138d52d66d2e6a8bee17412c6b0f48fe059ae04",
+      "image": ""
+    },
+    {
+      "name": "SithSwap: ETH/USDC Pool",
+      "symbol": "ssVLP-ETH/USDC",
+      "decimal": "18",
+      "contract": "0x030615bec9c1506bfac97d9dbd3c546307987d467a7f95d5533c2e861eb81f3f",
+      "image": ""
+    },
+    {
+      "name": "Nostra: Interest Bearing and Collateralized USDC Token",
+      "symbol": "iUSDC-c",
+      "decimal": "6",
+      "contract": "0x05dcd26c25d9d8fd9fc860038dcb6e4d835e524eb8a85213a8cda5b7fff845f6",
+      "image": ""
+    },
+    {
+      "name": "WARS",
+      "symbol": "WARS",
+      "decimal": "18",
+      "contract": "0x015905d4ce047ed501b498964e74d82750c22826db5a38449080e9bf4e4796ca",
+      "image": ""
+    },
+    {
+      "name": "Carmine ETH/USDC put pool",
+      "symbol": "C-ETHUSDC-P",
+      "decimal": "18",
+      "contract": "0x018a6abca394bd5f822cfa5f88783c01b13e593d1603e7b41b00d31d2ea4827a",
+      "image": ""
+    },
+    {
+      "name": "JediSwap: DAI/ETH Pool",
+      "symbol": "JEDI-P",
+      "decimal": "18",
+      "contract": "0x07e2a13b40fc1119ec55e0bcf9428eedaa581ab3c924561ad4e955f95da63138",
+      "image": ""
+    },
+    {
+      "name": "Akamaru",
+      "symbol": "AKU",
+      "decimal": "18",
+      "contract": "0x0137dfca7d96cdd526d13a63176454f35c691f55837497448fad352643cfe4d4",
+      "image": "https://assets.geckoterminal.com/u8zjys0hg4nejuwrydwyzjcvrp6d"
+    },
+    {
+      "name": "10KSwap: DAI-ETH Pool",
+      "symbol": "LPT",
+      "decimal": "18",
+      "contract": "0x017e9e62c04b50800d7c59454754fe31a2193c9c3c6c92c093f2ab0faadf8c87",
+      "image": ""
+    },
+    {
+      "name": "Nostra: Alpha Interest Bearing and Collateralized USDT Token",
+      "symbol": "iUSDT-c",
+      "decimal": "6",
+      "contract": "0x055ba2baf189b98c59f6951a584a3a7d7d6ff2c4ef88639794e739557e1876f0",
+      "image": ""
+    },
+    {
+      "name": "Nostra: Alpha Interest Bearing and Collateralized STRK Token",
+      "symbol": "iSTRK-c",
+      "decimal": "18",
+      "contract": "0x07c2e1e733f28daa23e78be3a4f6c724c0ab06af65f6a95b5e0545215f1abc1b",
+      "image": ""
+    },
+    {
+      "name": "Carmine ETH/USDC call pool",
+      "symbol": "C-ETHUSDC-C",
+      "decimal": "18",
+      "contract": "0x07aba50fdb4e024c1ba63e2c60565d0fd32566ff4b18aa5818fc80c30e749024",
+      "image": ""
+    },
+    {
+      "name": "Spirit Stone",
+      "symbol": "SPIST",
+      "decimal": "18",
+      "contract": "0x060cf64cf9edfc1b16ec903cee31a2c21680ee02fc778225dacee578c303806a",
+      "image": ""
+    },
+    {
+      "name": "DRAGON BALL",
+      "symbol": "DRAB",
+      "decimal": "18",
+      "contract": "0x02a3c4db12911f4acc6480f45928c2858e6517ec77d15a9709bc727af5f26e1b",
+      "image": ""
+    },
+    {
+      "name": "zkLend: zWBTC",
+      "symbol": "zWBTC",
+      "decimal": "8",
+      "contract": "0x02b9ea3acdb23da566cee8e8beae3125a1458e720dea68c4a9a7a2d8eb5bbb4a",
+      "image": ""
+    },
+    {
+      "name": "StarkEx Pair Token",
+      "symbol": "LPT",
+      "decimal": "18",
+      "contract": "0x069d369e52fd3f8ce32ab6073a4296f4ce8c832b125284e8f0d653e02e93541d",
+      "image": ""
+    },
+    {
+      "name": "SOCKS",
+      "symbol": "SOCKS",
+      "decimal": "18",
+      "contract": "0x023ed2ba4fb5709302c5dfd739fa7613359042f143286c115b6c7f7dc2601015",
+      "image": ""
+    },
+    {
+      "name": "SithSwap: USDC/USDT Pool",
+      "symbol": "ssSLP-USDC/USDT",
+      "decimal": "18",
+      "contract": "0x0601f72228f73704e827de5bcd8dadaad52c652bb1e42bf492d90bbe22df2cec",
+      "image": ""
+    },
+    {
+      "name": "StarkPepe",
+      "symbol": "SPEPE",
+      "decimal": "18",
+      "contract": "0x06f15ec4b6ff0b7f7a216c4b2ccdefc96cbf114d6242292ca82971592f62273b",
+      "image": ""
+    },
+    {
+      "name": "NOSTRA: Alpha Interest Bearing DAI Token",
+      "symbol": "iDAI",
+      "decimal": "18",
+      "contract": "0x00b9b1a4373de5b1458e598df53195ea3204aa926f46198b50b32ed843ce508b",
+      "image": ""
+    },
+    {
+      "name": "StarkPepe",
+      "symbol": "SPEPE",
+      "decimal": "18",
+      "contract": "0x01e0eee22c684fdf32babdd65e6bcca62a8ce2c23c8d5e68f3989595d26e1b4a",
+      "image": ""
+    },
+    {
+      "name": "zkLend Token",
+      "symbol": "ZEND",
+      "decimal": "18",
+      "contract": "0x00585c32b625999e6e5e78645ff8df7a9001cf5cf3eb6b80ccdd16cb64bd3a34",
+      "image": "https://assets.coingecko.com/coins/images/35979/small/zkLend_ZEND_logo_square_transparent_background_%281%29.png"
+    },
+    {
+      "name": "DAI V2",
+      "symbol": "DAI",
+      "decimal": "18",
+      "contract": "0x05574eb6b8789a91466f902c380d978e472db68170ff82a5b650b95a58ddf4ad",
+      "image": "https://coin-images.coingecko.com/coins/images/9956/small/Badge_Dai.png?1696509996"
+    },
+    {
+      "name": "Cash",
+      "symbol": "CASH",
+      "decimal": "18",
+      "contract": "0x0498edfaf50ca5855666a700c25dd629d577eb9afccdf3b5977aec79aee55ada",
+      "image": "https://raw.githubusercontent.com/Fibrous-Finance/Fibrous-tokens/refs/heads/main/images/starknet/0x0498edfaf50ca5855666a700c25dd629d577eb9afccdf3b5977aec79aee55ada.png"
+    },
+    {
+      "name": "STARKMAN",
+      "symbol": "STAM",
+      "decimal": "18",
+      "contract": "0x03902352adfa40453725e5c25fa5ed92bb62597f2db3236e26b85f2a668bb92e",
+      "image": "https://dd.dexscreener.com/ds-data/tokens/starknet/0x03902352adfa40453725e5c25fa5ed92bb62597f2db3236e26b85f2a668bb92e.png?key=072c5e"
+    },
+    {
+      "name": "Nimbora Staked Starknet",
+      "symbol": "sSTRK",
+      "decimal": "18",
+      "contract": "0x0356f304b154d29d2a8fe22f1cb9107a9b564a733cf6b4cc47fd121ac1af90c9",
+      "image": "https://nimbora-assets.s3.eu-central-1.amazonaws.com/yieldTokens/Group+41.svg"
+    },
+    {
+      "name": "Relend Network USDC - Starknet",
+      "symbol": "rUSDC-stark",
+      "decimal": "6",
+      "contract": "0x02019e47a0bc54ea6b4853c6123ffc8158ea3ae2af4166928b0de6e89f06de6c",
+      "image": "https://raw.githubusercontent.com/Fibrous-Finance/Fibrous-tokens/refs/heads/main/images/starknet/0x02019e47a0bc54ea6b4853c6123ffc8158ea3ae2af4166928b0de6e89f06de6c.png"
+    },
+    {
+      "name": "zkLend Staked Starknet",
+      "symbol": "kSTRK",
+      "decimal": "18",
+      "contract": "0x045cd05ee2caaac3459b87e5e2480099d201be2f62243f839f00e10dde7f500c",
+      "image": "https://app.zklend.com/icons/tokens/kstrk.svg"
+    },
+    {
+      "name": "SISTER",
+      "symbol": "SSTR",
+      "decimal": "18",
+      "contract": "0x0102d5e124c51b936ee87302e0f938165aec96fb6c2027ae7f3a5ed46c77573b",
+      "image": "https://assets.geckoterminal.com/v5h2pyyyo7hkpaxcpraapqj8ofq5"
+    },
+    {
+      "name": "Rocket Pool ETH",
+      "symbol": "rETH",
+      "decimal": "18",
+      "contract": "0x0319111a5037cbec2b3e638cc34a3474e2d2608299f3e62866e9cc683208c610",
+      "image": "https://coin-images.coingecko.com/coins/images/20764/small/reth.png?1696520159"
+    },
+    {
+      "name": "Standard Weighted Adalian Yield",
+      "symbol": "SWAY",
+      "decimal": "6",
+      "contract": "0x004878d1148318a31829523ee9c6a5ee563af6cd87f90a30809e5b0d27db8a9b",
+      "image": "https://raw.githubusercontent.com/Fibrous-Finance/Fibrous-tokens/refs/heads/main/images/starknet/0x004878d1148318a31829523ee9c6a5ee563af6cd87f90a30809e5b0d27db8a9b.jpg"
+    },
+    {
+      "name": "Alf the Alpha",
+      "symbol": "ALF",
+      "decimal": "18",
+      "contract": "0x078d7dfcddb44667153513bd837ff534ef395484f4b6cf28faa25b2c46e063d9",
+      "image": "https://raw.githubusercontent.com/Fibrous-Finance/Fibrous-tokens/refs/heads/main/images/starknet/0x078d7dfcddb44667153513bd837ff534ef395484f4b6cf28faa25b2c46e063d9.png\n"
+    },
+    {
+      "name": "STARKNET BROTHER",
+      "symbol": "BROTHER",
+      "decimal": "18",
+      "contract": "0x03b405a98c9e795d427fe82cdeeeed803f221b52471e3a757574a2b4180793ee",
+      "image": "https://raw.githubusercontent.com/Fibrous-Finance/Fibrous-tokens/refs/heads/main/images/starknet/0x03b405a98c9e795d427fe82cdeeeed803f221b52471e3a757574a2b4180793ee.jpg\n"
+    },
+    {
+      "name": "LUSD Stablecoin",
+      "symbol": "LUSD",
+      "decimal": "18",
+      "contract": "0x070a76fd48ca0ef910631754d77dd822147fe98a569b826ec85e3c33fde586ac",
+      "image": "https://coin-images.coingecko.com/coins/images/14666/small/Group_3.png?1696514341"
+    },
+    {
+      "name": "DICK",
+      "symbol": "DICK",
+      "decimal": "18",
+      "contract": "0x0388588584bd8c651151f6baf241a85827e7ff0574101f2a8194a3df68a7e2fe",
+      "image": "https://assets.geckoterminal.com/p4l1kgr1c62b4wfvelf7sundbn3g"
+    },
+    {
+      "name": "Nostra Staked STRK",
+      "symbol": "nstSTRK",
+      "decimal": "18",
+      "contract": "0x04619e9ce4109590219c5263787050726be63382148538f3f936c22aa87d2fc2",
+      "image": "https://coin-images.coingecko.com/coins/images/35752/large/stSTRK.png?1709720278"
+    },
+    {
+      "name": "Starknet Mascot",
+      "symbol": "STARKMASK",
+      "decimal": "18",
+      "contract": "0x001b7c2cd6c4fe74883100e5214c412f5f901e4de0a84f4188d5170d76bb46fc",
+      "image": "https://dd.dexscreener.com/ds-data/tokens/starknet/0x001b7c2cd6c4fe74883100e5214c412f5f901e4de0a84f4188d5170d76bb46fc.png?key=7bbafe"
+    },
+    {
+      "name": "wizardwifhat",
+      "symbol": "WIZ",
+      "decimal": "18",
+      "contract": "0x006e987f1e703c549991e1c13b8f1b8e1e6f8bba068a0715b9aacb51dba2800f",
+      "image": "https://dd.dexscreener.com/ds-data/tokens/starknet/0x006e987f1e703c549991e1c13b8f1b8e1e6f8bba068a0715b9aacb51dba2800f.png?key=81894d"
+    },
+    {
+      "name": "SCHIZODIO ",
+      "symbol": "SCHIZODIO ",
+      "decimal": "18",
+      "contract": "0x00acc2fa3bb7f6a6726c14d9e142d51fe3984dbfa32b5907e1e76425177875e2",
+      "image": "https://dd.dexscreener.com/ds-data/tokens/starknet/0x00acc2fa3bb7f6a6726c14d9e142d51fe3984dbfa32b5907e1e76425177875e2.png?key=6092b5"
+    },
+    {
+      "name": "ONLY EIGHT USERS",
+      "symbol": "8",
+      "decimal": "18",
+      "contract": "0x00e33356072418951fdf3312e3e2eef99abf6d7e12df6ff956082d3e178dde2a",
+      "image": "https://raw.githubusercontent.com/Fibrous-Finance/Fibrous-tokens/refs/heads/main/images/starknet/0x00e33356072418951fdf3312e3e2eef99abf6d7e12df6ff956082d3e178dde2a.png\n"
+    },
+    {
+      "name": "just a chill guy",
+      "symbol": "CHILL",
+      "decimal": "18",
+      "contract": "0x00fe6602ac6e931b6620e8255a994e58f1998d4687eb8f7d599534da521c3a01",
+      "image": "https://dd.dexscreener.com/ds-data/tokens/starknet/0x00fe6602ac6e931b6620e8255a994e58f1998d4687eb8f7d599534da521c3a01.png?key=a35575"
+    },
+    {
+      "name": "Slinky",
+      "symbol": "SLINK",
+      "decimal": "18",
+      "contract": "0x013ff4e86fa3e7286cc5c64b62f4099cf41e7918d727d22a5109ecfd00274d19",
+      "image": "https://raw.githubusercontent.com/Fibrous-Finance/Fibrous-tokens/refs/heads/main/images/starknet/0x013ff4e86fa3e7286cc5c64b62f4099cf41e7918d727d22a5109ecfd00274d19.png\n"
+    },
+    {
+      "name": "vadim",
+      "symbol": "V",
+      "decimal": "18",
+      "contract": "0x01b399936bd579984682a34e0785da90962b920e9a15cfa915a370b0e8313fd7",
+      "image": "https://dd.dexscreener.com/ds-data/tokens/starknet/0x01b399936bd579984682a34e0785da90962b920e9a15cfa915a370b0e8313fd7.png?key=7b2efd"
+    },
+    {
+      "name": "Make Starknet Great Again",
+      "symbol": "MSGA",
+      "decimal": "18",
+      "contract": "0x0245d6e0a40b5231ac4422d9bdb45ce07e6c208d57dba523f205ebd6ffd14669",
+      "image": "https://dd.dexscreener.com/ds-data/tokens/starknet/0x0245d6e0a40b5231ac4422d9bdb45ce07e6c208d57dba523f205ebd6ffd14669.png?key=d27c70"
+    },
+    {
+      "name": "Donkey\u0006",
+      "symbol": "DONKEY\u0006",
+      "decimal": "18",
+      "contract": "0x0264be95a4a2ace20add68cb321acdccd2f9f8440ee1c7abd85da44ddab01085",
+      "image": "https://dd.dexscreener.com/ds-data/tokens/starknet/0x0124aeb495b947201f5fac96fd1138e326ad86195b98df6dec9009158a533b49.png?key=439a94"
+    },
+    {
+      "name": "Brother Eli",
+      "symbol": "SLAY",
+      "decimal": "18",
+      "contract": "0x02ab526354a39e7f5d272f327fa94e757df3688188d4a92c6dc3623ab79894e2",
+      "image": "https://dd.dexscreener.com/ds-data/tokens/starknet/0x02ab526354a39e7f5d272f327fa94e757df3688188d4a92c6dc3623ab79894e2.png?key=04732b"
+    },
+    {
+      "name": "Hashstack",
+      "symbol": "HSTK",
+      "decimal": "18",
+      "contract": "0x02e8f2e80fab8239b234c125ee1a68d522718e1d698c214ac85d1f48407349c9",
+      "image": "https://raw.githubusercontent.com/Fibrous-Finance/Fibrous-tokens/refs/heads/main/images/starknet/0x02e8f2e80fab8239b234c125ee1a68d522718e1d698c214ac85d1f48407349c9.png"
+    },
+    {
+      "name": "OWL",
+      "symbol": "OWL",
+      "decimal": "18",
+      "contract": "0x039877a272619050ab8b0e3e0a19b58d076fc2ce84da1dc73b699590e629f2b8",
+      "image": "https://dd.dexscreener.com/ds-data/tokens/starknet/0x039877a272619050ab8b0e3e0a19b58d076fc2ce84da1dc73b699590e629f2b8.png?key=9a6ab5"
+    },
+    {
+      "name": "Gremlins",
+      "symbol": "GREM",
+      "decimal": "18",
+      "contract": "0x039cb78b822286a528fe2a22747605ebab151be7c6e1351d54fdd3577baf17fd",
+      "image": "https://dd.dexscreener.com/ds-data/tokens/starknet/0x039cb78b822286a528fe2a22747605ebab151be7c6e1351d54fdd3577baf17fd.png?key=c39c02"
+    },
+    {
+      "name": "Starknet CTO",
+      "symbol": "SCTO",
+      "decimal": "18",
+      "contract": "0x03d8694b417850342a93cc8923fba1fbb19482b642fb6e09e37e8ede4abfd014",
+      "image": "https://dd.dexscreener.com/ds-data/tokens/starknet/0x03d8694b417850342a93cc8923fba1fbb19482b642fb6e09e37e8ede4abfd014.png?key=0e746a"
+    },
+    {
+      "name": "Donkey",
+      "symbol": "DONKEY",
+      "decimal": "18",
+      "contract": "0x03db6034c76bf1898ebac71a00651f7243d7c147578f157ad96717add61edaf9",
+      "image": "https://raw.githubusercontent.com/Fibrous-Finance/Fibrous-tokens/refs/heads/main/images/starknet/0x03db6034c76bf1898ebac71a00651f7243d7c147578f157ad96717add61edaf9.png\n"
+    },
+    {
+      "name": "Pain au lait",
+      "symbol": "PAL",
+      "decimal": "18",
+      "contract": "0x049201f03a0f0a9e70e28dcd74cbf44931174dbe3cc4b2ff488898339959e559",
+      "image": "https://assets.geckoterminal.com/31n2jn1ob18hxbo65ujmo73lny4w"
+    },
+    {
+      "name": "Uniswap",
+      "symbol": "UNI",
+      "decimal": "18",
+      "contract": "0x049210ffc442172463f3177147c1aeaa36c51d152c1b0630f2364c300d4f48ee",
+      "image": "https://coin-images.coingecko.com/coins/images/12504/small/uniswap-logo.png?1720676669"
+    },
+    {
+      "name": "Tony",
+      "symbol": "TONY",
+      "decimal": "18",
+      "contract": "0x05f467ace847d1cbc6d1efea978752a8b4549fec043286fec1289d19b8c57e67",
+      "image": "https://dd.dexscreener.com/ds-data/tokens/starknet/0x05f467ace847d1cbc6d1efea978752a8b4549fec043286fec1289d19b8c57e67.png?key=9817b9"
+    },
+    {
+      "name": "Money Printer Go Brrr",
+      "symbol": "$BRRR",
+      "decimal": "18",
+      "contract": "0x067737cbee9be3e3042ca86ef41598af7cc36fa6e109193c165b854de07d1df7",
+      "image": "https://dd.dexscreener.com/ds-data/tokens/starknet/0x067737cbee9be3e3042ca86ef41598af7cc36fa6e109193c165b854de07d1df7.png?key=e9fec7"
+    },
+    {
+      "name": "PACCAN Cash",
+      "symbol": "PACCAN",
+      "decimal": "18",
+      "contract": "0x06e141a7f86d9ce6cb5f4dd05cd05cae712ee0354425b84bbe6523b9f1b53093",
+      "image": "https://dd.dexscreener.com/ds-data/tokens/starknet/0x06e141a7f86d9ce6cb5f4dd05cd05cae712ee0354425b84bbe6523b9f1b53093.png?key=f30584"
+    },
+    {
+      "name": "STONED TOE TONY ",
+      "symbol": "STOENY",
+      "decimal": "18",
+      "contract": "0x06e2c03e31f6cda18484ed035c02a25d6075393e11da24c898337f736716acae",
+      "image": "https://raw.githubusercontent.com/Fibrous-Finance/Fibrous-tokens/refs/heads/main/images/starknet/0x06e2c03e31f6cda18484ed035c02a25d6075393e11da24c898337f736716acae.png"
+    },
+    {
+      "name": "TrumpWifCat",
+      "symbol": "TWC",
+      "decimal": "18",
+      "contract": "0x0768aef7aea42030cb701e1a97984b8f91b8f306a34bd0d461c466012d720b4b",
+      "image": "https://raw.githubusercontent.com/Fibrous-Finance/Fibrous-tokens/refs/heads/main/images/starknet/0x0768aef7aea42030cb701e1a97984b8f91b8f306a34bd0d461c466012d720b4b.png\n"
+    }
+  ]
 }
