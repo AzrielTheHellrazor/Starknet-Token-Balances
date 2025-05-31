@@ -12,38 +12,24 @@ const tokenAddresses: Array<`0x${string}`> = tokenAddressesJson.coins.map(
 
 const userAddress: `0x${string}` = "USER_ADDRESS_HERE"; // Replace with the actual user address
 
+const account = new Account(provider, "PUBLIC_KEY", "PRIVATE_KEY");
+
 async function getTokenBalances(
   tokenAddresses: Array<`0x${string}`>,
   userAddress: `0x${string}`
 ) {
   try {
-    const contracts = tokenAddresses.map(
-      (address) => new Contract(contractABI, address, provider)
+    const multiCall = await account.execute(
+      Array.from({ length: 50 }, (_, i) => ({
+        contractAddress: tokenAddresses[i],
+        entrypoint: "balanceOf",
+        calldata: CallData.compile({
+          account: userAddress,
+        }),
+      }))
     );
-
-    const balancePromises = contracts.map((contract) =>
-      contract.balanceOf(userAddress)
-    );
-    const decimalPromises = contracts.map((contract) => contract.decimals());
-
-    const [balances, decimals] = await Promise.all([
-      Promise.all(balancePromises),
-      Promise.all(decimalPromises),
-    ]);
-
-    return tokenAddresses.map((tokenAddress, index) => {
-      const balanceStr = balances[index].toString();
-      const formattedBalance =
-        balanceStr.length > 4
-          ? `${balanceStr.slice(0, 4)}.${balanceStr.slice(4)}`
-          : balanceStr;
-
-      return {
-        tokenAddress,
-        balance: formattedBalance,
-        decimal: decimals[index],
-      };
-    });
+    await provider.waitForTransaction(multiCall.transaction_hash);
+    console.log("MultiCall Result:", multiCall);
   } catch (error) {
     console.error("Error in multicall:", error);
     return tokenAddresses.map((tokenAddress) => ({
